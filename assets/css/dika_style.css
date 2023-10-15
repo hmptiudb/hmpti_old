@@ -1,0 +1,375 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  background: #fff !important;
+  color: #666666 !important;
+  font-family: "Open Sans", sans-serif;
+}
+
+::selection {
+  color: #18d26e;
+}
+
+.search-btn {
+  background-color: #18d36e !important;
+  vertical-align: unset !important;
+}
+
+button.btn:hover {
+  background-color: transparent !important;
+  border-color: #18d36e !important;
+  transition: 0.3s ease-in-out !important;
+}
+
+a.btn-get-started:hover {
+  background-color: transparent !important;
+  border-color: #18d36e !important;
+  color: white !important;
+  transition: 0.3s ease-in-out !important;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: #18d36e !important;
+  outline: none !important;
+  text-decoration: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 400 !important;
+  margin: 0 0 20px 0 !important;
+  padding: 0 !important;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  padding: 30px 0 !important;
+  height: 92px !important;
+  position: fixed !important;
+  left: 0 !important;
+  top: 0 !important;
+  right: 0 !important;
+  transition: all 0.5s !important;
+  z-index: 997 !important;
+}
+
+#header.header-scrolled {
+  background: rgba(0, 0, 0, 0.9) !important;
+  padding: 20px 0 !important;
+  height: 72px !important;
+  transition: all 0.5s !important;
+}
+
+#header #logo {
+  float: left !important;
+}
+
+#header #logo img {
+  margin: -7px 0 0 0 !important;
+}
+
+/*--------------------------------------------------------------
+# Intro Section
+--------------------------------------------------------------*/
+#intro {
+  display: table !important;
+  width: 100% !important;
+  height: 100vh !important;
+  background: #000 !important;
+}
+
+#intro .carousel-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex !important;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center !important;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center !important;
+  position: absolute !important;
+  bottom: 0 !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+}
+
+#intro .carousel-content {
+  text-align: center !important;
+}
+
+#intro h2 {
+  color: #fff !important;
+  margin-bottom: 30px !important;
+  font-size: 45px !important;
+  font-weight: 700 !important;
+}
+
+#intro p {
+  width: 80% !important;
+  margin: 0 auto 30px auto !important;
+  color: #fff !important;
+}
+
+#intro .carousel-indicators li {
+  cursor: pointer !important;
+}
+
+#intro .btn-get-started {
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  letter-spacing: 1px !important;
+  display: inline-block !important;
+  padding: 8px 32px !important;
+  border-radius: 50px !important;
+  transition: 0.5s !important;
+  margin: 10px !important;
+  color: #fff !important;
+  border: 1px solid #18d26e !important;
+  background: #18d26e !important;
+}
+
+#intro .btn-get-started:hover {
+  background: transparent !important;
+  color: #fff !important;
+  border: 1px solid #18d26e !important;
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/* Nav Menu Essentials */
+.navbar-nav,
+.navbar-nav * {
+  margin: 0 !important;
+  /* padding: 0; */
+  list-style: none !important;
+}
+
+.nav-menu ul {
+  position: absolute !important;
+  display: none !important;
+  top: 100% !important;
+  left: 0 !important;
+  z-index: 99 !important;
+}
+
+.navbar-nav li {
+  position: relative !important;
+  white-space: nowrap !important;
+}
+
+.navbar-nav > li {
+  float: left !important;
+}
+
+/* Nav Meu Container */
+#nav-menu-container {
+  float: right !important;
+  margin: 0 !important;
+  margin-top: -3px !important;
+}
+
+/* Nav Meu Styling */
+.navbar-nav a {
+  padding: 10px 25px 10px 8px !important;
+  text-decoration: none !important;
+  display: inline-block !important;
+  /* color: #fff !important; */
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 13px !important;
+  text-transform: uppercase !important;
+  outline: none !important;
+}
+
+.navbar-nav li:hover > a,
+.navbar-nav > .menu-active > a {
+  color: #18d26e !important;
+}
+
+.navbar-nav > li {
+  margin-left: 25px !important;
+}
+
+a.navbar-nonaktif {
+  color: white !important;
+}
+
+/* Mobile Nav Toggle */
+#mobile-nav-toggle {
+  position: fixed !important;
+  right: 0 !important;
+  top: 0 !important;
+  z-index: 999 !important;
+  margin: 20px 20px 0 0 !important;
+  border: 0 !important;
+  background: none !important;
+  font-size: 24px !important;
+  display: none !important;
+  transition: all 0.4s !important;
+  outline: none !important;
+  cursor: pointer !important;
+}
+
+/* Mobile Nav Styling */
+#mobile-nav {
+  position: fixed !important;
+  top: 0 !important;
+  padding-top: 18px !important;
+  bottom: 0 !important;
+  z-index: 998 !important;
+  background: rgba(0, 0, 0, 0.8) !important;
+  left: -260px !important;
+  width: 260px !important;
+  overflow-y: auto !important;
+  transition: 0.4s !important;
+}
+
+/* ---------------------------------------------------
+# Sections Header
+--------------------------------------------------*/
+.section-header h3 {
+  font-size: 32px !important;
+  color: #111 !important;
+  text-transform: uppercase !important;
+  text-align: center !important;
+  font-weight: 700 !important;
+  position: relative !important;
+  padding-bottom: 15px !important;
+}
+
+.section-header h3::before {
+  content: "" !important;
+  position: absolute !important;
+  display: block !important;
+  width: 120px !important;
+  height: 1px !important;
+  background: #ddd !important;
+  bottom: 1px !important;
+  left: calc(50% - 60px) !important;
+}
+
+.section-header h3::after {
+  content: "" !important;
+  position: absolute !important;
+  display: block !important;
+  width: 40px !important;
+  height: 3px !important;
+  background: #18d26e !important;
+  bottom: 0 !important;
+  left: calc(50% - 20px) !important;
+}
+
+.section-header p {
+  text-align: center !important;
+  padding-bottom: 30px !important;
+  color: #333 !important;
+  font-style: italic !important;
+}
+
+/* -------------------------------------------------------------
+# About Us Section
+----------------------------------------------------------------*/
+#about {
+  padding: 60px 0 40px 0 !important;
+}
+.btn-get-started {
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  letter-spacing: 1px !important;
+  display: inline-block !important;
+  padding: 8px 32px !important;
+  border-radius: 50px !important;
+  transition: 0.5s !important;
+  color: #fff !important;
+  border: 1px solid #18d26e !important;
+  background: #18d26e !important;
+  text-align: center;
+}
+
+/*--------------------------------------------------------------
+# Responsive Media Queries
+--------------------------------------------------------------*/
+@media (min-width: 1024px) {
+  #header #logo {
+    padding-left: 60px !important;
+  }
+
+  #intro p {
+    width: 60% !important;
+  }
+
+  #intro .carousel-control-prev,
+  #intro .carousel-control-next {
+    width: 5% !important;
+  }
+
+  #nav-menu-container {
+    padding-right: 100px !important;
+  }
+}
+
+/* 1024px */
+/* 992px */
+/* 768px */
+
+@media (max-width: 768px) {
+  .back-to-top {
+    bottom: 15px !important;
+  }
+
+  #header #logo h1 {
+    font-size: 28px !important;
+  }
+
+  #header #logo img {
+    max-height: 40px !important;
+  }
+
+  #intro h2 {
+    font-size: 28px !important;
+  }
+
+  #nav-menu-container {
+    display: none !important;
+  }
+
+  #mobile-nav-toggle {
+    display: inline !important;
+  }
+
+  .section-header h3 {
+    font-size: 23px !important;
+    color: #111 !important;
+    text-transform: uppercase !important;
+    text-align: center !important;
+    font-weight: 700 !important;
+    position: relative !important;
+    padding-bottom: 15px !important;
+  }
+
+  .section-header p {
+    text-align: center !important;
+    padding-bottom: 30px !important;
+    color: #333 !important;
+    font-size: 13px !important;
+    font-style: italic !important;
+  }
+}
